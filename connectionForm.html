@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Formulaire IP et Port</title>
+  <link rel="stylesheet" href="../src/style/connectionForm.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/notie/dist/notie.min.css">
+  <style>
+    /* override styles here */
+    .notie-container {
+      box-shadow: none;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Formulaire pour vous connecter au serveur</h1>
+  </header>
+  <form method="POST">
+    <label for="ip">IP :</label>
+    <small class="hidden" id="small">*vous devez entrer une IP</small>
+    <input type="text" id="ip" name="ip" placeholder="Entrer une adresse IP">
+    <label for="port">PORT :</label>
+    <input value="80" type="number" id="port" name="port" placeholder="Entrer un port">
+    <button id="btn" type="submit">Envoyer</button>
+  </form>
+  <!-- 
+      type="module" pour pouvoir appelé d'autre module 
+      on declare le fichier comme un module.
+    -->
+  <script src="https://unpkg.com/notie"></script>
+  <script type="module" src="../src/script/connectionFormHandler.js"></script>
+</body>
+
+</html>

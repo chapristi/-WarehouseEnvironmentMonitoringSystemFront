@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Formulaire de données météo</title>
+  <link rel="stylesheet" href="../src/style/sensorForm.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/notie/dist/notie.min.css">
+  <style>
+    /* override styles here */
+    .notie-container {
+      box-shadow: none;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Enregistrer mon nouveau capteur</h1>
+  <form id="form">
+    <div class="form-group">
+      <label for="name">Nom :</label>
+      <input type="text" required id="name" name="name" placeholder="SECOND SENSOR">
+    </div>
+    <div class="form-group">
+      <label for="adresse_mac">Adresse MAC :</label>
+      <input type="text" required id="macAddress" name="macAddress" placeholder="00-B0-D0-63-C2-26">
+    </div>
+    <div class="form-group">
+      <label for="latitude">Latitude (facultatif) :</label>
+      <input type="number" id="latitude" name="latitude" placeholder="15.23456">
+    </div>
+    <div class="form-group">
+      <label for="longitude">Longitude (facultatif) :</label>
+      <input type="number" id="longitude" name="longitude" placeholder="-30.67890">
+    </div>
+    <div class="form-group">
+      <label for="temperature">Seuil de Température:</label>
+      <input type="number" required id="temperature" name="temperature" placeholder="30" required>
+    </div>
+    <div class="form-group">
+      <label for="humidite">Seuil d'Humidité:</label>
+      <input type="number" required id="humidity" name="humidity" placeholder="80" required>
+    </div>
+    <div class="form-group">
+      <button id="validate" type="submit">Envoyer</button>
+    </div>
+  </form>
+  <script src="https://unpkg.com/notie"></script>
+  <script type="module" src="../src/script/createSensor.js"></script>
+</body>
+
+</html>

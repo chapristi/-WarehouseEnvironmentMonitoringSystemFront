@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Ma page météo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--on charge le javascript en premier pour effectuer les verifications-->
+  <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+  <script type="module" src="../src/script/displayMeteo.js"></script>
+  <link rel="stylesheet" type="text/css" href="../src/style/panelMeteo.css" />
+</head>
+
+<body>
+
+  <div id="loader">
+    <img src="../src/assets/loader.gif" alt="loader">
+  </div>
+
+  <header>
+    <h1>Informations renvoyés par le pico xyz en temps reel</h1>
+  </header>
+  <main>
+    <div class="cards">
+      <div class="card">
+        <h2>Température</h2>
+        <p id="temperature">??°C</p>
+      </div>
+      <div class="card">
+        <h2>Humidité</h2>
+        <p id="humidity">??%</p>
+      </div>
+    </div>
+    <div class="actionBtns">
+      <button id="updateBtn" onclick="">modifier</button>
+      <button id="backBtn">retour</button>
+    </div>
+    </div>
+  </main>
+
+</body>
+
+</html>
