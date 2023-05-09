@@ -1,7 +1,7 @@
 import { THRESHOLD_API_URL } from "./apiRoutes.js";
 import { getData } from "./utils/api/getData.js";
 import { patchData } from "./utils/api/patchData.js";
-import {getParameterByName, checkParametre } from "./utils/readParamsInURL.js";
+import { getParameterByName, checkParametre } from "./utils/readParamsInURL.js";
 
 
 const form = document.querySelector('form');
@@ -15,7 +15,7 @@ const sensorId = atob(getParameterByName("id") || "");
 checkParametre(sensorId)
 // Mettre à jour les valeurs de seuil actuelles dans le formulaire
 const updateThresholdInputs = async () => {
-    const threshold = await getData(`${THRESHOLD_URL}/${sensorId}`);
+    const threshold = await getData(`${THRESHOLD_API_URL}/${sensorId}`);
     const { humidity, temperature } = threshold;
     humidityInput.value = humidity;
     temperatureInput.value = temperature;

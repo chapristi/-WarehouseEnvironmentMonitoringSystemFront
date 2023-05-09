@@ -1,18 +1,20 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap');
 
 header {
-  margin:0;
+  margin: 0;
   background-color: #26474E;
   color: #fff;
   padding: 20px;
   text-align: center;
 }
-header, h1{
-    line-height:35px;
-    font-family: 'Darumadrop One', cursive;
-  }
-  article {
+
+header,
+h1 {
+  line-height: 35px;
+  font-family: 'Darumadrop One', cursive;
+}
+
+article {
   --img-scale: 1.001;
   --title-color: black;
   --link-icon-translate: -20px;
@@ -77,10 +79,12 @@ article a {
 article a:focus {
   outline: 1px dotted #28666e;
 }
-strong{
+
+strong {
   font-family: 'Darumadrop One', cursive;
   font-size: 25px;
 }
+
 article a .icon {
   min-width: 24px;
   width: 24px;
@@ -123,7 +127,7 @@ body {
 }
 
 .articles {
-  margin-top:5%;
+  margin-top: 1%;
   display: grid;
   max-width: 1200px;
   margin-inline: auto;
@@ -136,6 +140,7 @@ body {
   article {
     container: card/inline-size;
   }
+
   .article-body p {
     display: none;
   }
@@ -147,14 +152,17 @@ body {
     grid-template-columns: 100px 1fr;
     gap: 16px;
   }
+
   .article-body {
     padding-left: 0;
   }
+
   figure {
     width: 100%;
     height: 100%;
     overflow: hidden;
   }
+
   figure img {
     height: 100%;
     aspect-ratio: 1;
@@ -163,11 +171,11 @@ body {
 }
 
 .sr-only:not(:focus):not(:active) {
-  clip: rect(0 0 0 0); 
+  clip: rect(0 0 0 0);
   clip-path: inset(50%);
   height: 1px;
   overflow: hidden;
   position: absolute;
-  white-space: nowrap; 
+  white-space: nowrap;
   width: 1px;
 }

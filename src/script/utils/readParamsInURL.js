@@ -9,9 +9,9 @@ export function getParameterByName(name, url) {
     if (!results[2]) return '';
     return decodeURIComponent(results[2].replace(/\+/g, ' '));
 }
-export const checkParametre = (param)=>{
+export const checkParametre = (param) => {
     if (!param) {
         redirect("connectionForm", { errMessage: "aucun identifiant n'est renseigné" });
         return
-      }
+    }
 }

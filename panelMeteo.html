@@ -8,7 +8,11 @@
   <!--on charge le javascript en premier pour effectuer les verifications-->
   <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
   <script type="module" src="../src/script/displayMeteo.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+
   <link rel="stylesheet" type="text/css" href="../src/style/panelMeteo.css" />
+  <link rel="stylesheet" type="text/css" href="../src/style/navButtons.css" />
+
 </head>
 
 <body>
@@ -31,11 +35,11 @@
         <p id="humidity">??%</p>
       </div>
     </div>
-    <div class="actionBtns">
-      <button id="updateBtn" onclick="">modifier</button>
-      <button id="backBtn">retour</button>
+    <div class="navBtns">
+      <button id="updateBtn" onclick="">modifier ✏️</button>
+      <button id="backBtn">retour 🚪</button>
     </div>
-    </div>
+
   </main>
 
 </body>

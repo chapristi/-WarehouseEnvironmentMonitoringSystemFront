@@ -60,6 +60,7 @@ button {
 button:hover {
   background-color: #2e5a64;
 }
+
 form small {
   color: #b93d03;
   font-size: 15px;
@@ -67,8 +68,15 @@ form small {
   margin-bottom: 5px;
 
 }
+
 .hidden {
   visibility: hidden;
   display: none;
 
+}
+
+@media screen and (max-width: 536px) {
+  input {
+    width: 85%
+  }
 }

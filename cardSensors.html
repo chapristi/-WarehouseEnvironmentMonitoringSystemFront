@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../src/style/cardSensors.css">
+  <link rel="stylesheet" type="text/css" href="../src/style/navButtons.css" />
   <title>Document</title>
 </head>
 
@@ -13,10 +14,51 @@
   <header>
     <h1>VOUS AVEZ ACCEES AUX DONNEES DE TOUT LES CAPTEURS DE L'ENTRPOT</h1>
   </header>
-  <section id="articles" class="articles">
-    
+  <section class="test">
+    <form action="#" method="get">
+      <input type="text" id="searchBar" name="search" placeholder="Rechercher un capteur...">
+      <button id="searchButton" type="submit">Rechercher</button>
+  </form>
   </section>
-  <script type="module" src="../src/script/displayCardsSensors.js"></script>
+  <section id="articles" class="articles">
+  </section>
+  <section class="navBtns">
+    <a href="createSensorForm.html"><button>ajouter ✍️</button></a>
+    <a href="weather.html"><button>s'informer 🌤</button></a>
+    </div>
+    <script type="module" src="../src/script/displayCardsSensors.js"></script>
 </body>
 
 </html>
+<style>
+ .test{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100%;
+}
+
+
+input[type="text"] {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  flex: 1;
+  width:600px;
+  margin-bottom: 0.5rem; /* Pour ajouter un espace entre les éléments */
+  max-width: 100%; /* Pour occuper toute la largeur disponible */
+}
+
+button[type="submit"] {
+  padding: 0.65rem 1rem;
+  background-color: #366f7b;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  max-width: 100%; /* Pour occuper toute la largeur disponible */
+}
+</style>

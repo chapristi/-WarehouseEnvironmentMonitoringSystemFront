@@ -1,0 +1,21 @@
+.navBtns {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.navBtns button {
+    background-color: #2e5a64;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    margin: 10px;
+    cursor: pointer;
+
+}
+
+.navBtns button:hover {
+    background-color: #1a3640;
+}

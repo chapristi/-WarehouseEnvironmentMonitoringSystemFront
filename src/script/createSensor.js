@@ -33,7 +33,7 @@ validateBtn.addEventListener("click", async (e) => {
                     stay: false, // optional, default = false
                     time: 4.5, // optional, default = 3, minimum = 1,
                     position: "top" // optional, default = 'top', enum: ['top', 'bottom']
-                  })
+                })
             } else {
                 throw new Error("Invalid response from server");
             }

@@ -6,13 +6,13 @@ export function postData(url, data) {
     },
     body: JSON.stringify(data)
   })
-  .then(response => response.json())
-  .then(data => {
-    console.log(data);
-    return data; // renvoie la réponse
-  })
-  .catch(error => {
-    console.error(error);
-    throw error; // lance une erreur
-  });
+    .then(response => response.json())
+    .then(data => {
+      console.log(data);
+      return data; // renvoie la réponse
+    })
+    .catch(error => {
+      console.error(error);
+      throw error; // lance une erreur
+    });
 }

@@ -1,7 +1,7 @@
-export const makeVisible = (element) =>{
+export const makeVisible = (element) => {
     element.classList.remove("hidden")
     element.classList.add("visible")
 }
-export const makeInvisible = (element) =>{
+export const makeInvisible = (element) => {
     element.classList.add("hidden")
 }

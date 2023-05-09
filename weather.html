@@ -1,0 +1,144 @@
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
+
+    body {
+        font-family: 'Darumadrop One', cursive;
+        background-color: #258da5;
+
+    }
+
+    header {
+        background-color: #26474E;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+
+    article {
+        background-color: #4fa3c1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        border-radius: 15px;
+        width: 55%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+
+    }
+
+    article h3 {
+        font-size: 30px;
+
+    }
+
+    .weather-city div {
+        text-align: center;
+    }
+
+    section div h5 {
+        font-size: 30px;
+    }
+
+    section div h2 {
+        font-size: 50px;
+    }
+
+    .infos {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-width: 305px;
+
+    }
+
+    .weather-cards-title {
+        margin-left: 15px;
+    }
+
+    .infos * {
+        margin: 15px;
+        font-size: 25px;
+    }
+
+    .weather-cards {
+        padding: 40px;
+    }
+</style>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Suivez la météo de la semaine pour mieux anticiper les ecarts</h1>
+    </header>
+
+    <section class="weather-city">
+        <div>
+            <h2>Limoges 🇫🇷
+            </h2>
+            <h5>4 days of weather 😎</h5>
+        </div>
+    </section>
+    <section class="weather-today" style="  display: flex;
+    justify-content:center;
+    align-items: center;flex-direction:column">
+        <img src="https://cdn-icons-png.flaticon.com/512/1327/1327634.png" height="150px" width="150px" alt="">
+        <h2 style="font-size: 55px;">
+            25°C
+        </h2>
+    </section>
+
+    <section class="weather-cards">
+
+        <article>
+            <div class="weather-cards-title">
+                <h3>Samedi</h3>
+            </div>
+            <div class="infos">
+                <img src="https://openweathermap.org/img/w/04d.png" height="90px" width="90px">
+                <p>44°C</p>
+                <p>Clouds</p>
+            </div>
+        </article>
+        <article>
+            <div class="weather-cards-title">
+                <h3>Dimanche</h3>
+            </div>
+            <div class="infos">
+                <img src="https://openweathermap.org/img/w/04d.png" height="90px" width="90px">
+                <p>35°C</p>
+                <p>Sun</p>
+            </div>
+        </article>
+        <article>
+            <div class="weather-cards-title">
+                <h3>Lundi</h3>
+            </div>
+            <div class="infos">
+                <img src="https://openweathermap.org/img/w/04d.png" height="90px" width="90px">
+                <p>23°C</p>
+                <p>Clouds</p>
+            </div>
+        </article>
+
+
+    </section>
+</body>
+
+</html>
