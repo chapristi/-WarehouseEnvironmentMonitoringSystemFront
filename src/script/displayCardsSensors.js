@@ -27,7 +27,7 @@ async function generateArticles(url) {
     // créer un élément HTML pour chaque objet
     const article = document.createElement('article');
 
-    let date = new Date(sensor.created_at)
+    const date = new Date(sensor.created_at)
     const fullDate = date.getFullYear() + "/" + date.getMonth() + "/" + date.getDay()
     article.innerHTML = `
   <div class="article-wrapper">
@@ -64,7 +64,6 @@ window.addEventListener("onload", generateArticles(SENSOR_API_URL));
 searchButton.addEventListener("click",(e)=>{
   e.preventDefault();
   if(searchInput.value !== ""){
-    console.log("ok?")
     generateArticles(SENSOR_API_URL+`?q=${searchInput.value}`)
   }
 })
